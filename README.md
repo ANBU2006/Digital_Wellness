@@ -1,18 +1,18 @@
 # 🌿 Digital Wellness Recommendation Engine
 
-A full-stack Digital Wellness Recommendation Engine web application that helps users monitor and improve their daily wellness activities such as screen time, study hours, sleep, and exercise.
+A full-stack **Digital Wellness Recommendation Engine** web application that helps users monitor and improve their daily wellness activities such as screen time, study hours, sleep, and exercise.
 
 ---
 
 ## 🚀 Features
 
-- User Registration and Login (JWT Authentication)
-- Secure password hashing using bcrypt
-- Track daily wellness activities
-- Visual analytics using Chart.js graphs
-- Dashboard with wellness score
-- Persistent data storage using MongoDB
-- Responsive modern UI
+- 🔐 User Registration and Login with JWT Authentication  
+- 🛡 Secure password hashing using bcrypt  
+- 📊 Track daily wellness activities  
+- 📈 Visual analytics using Chart.js graphs  
+- 🧠 Dashboard with wellness score and recommendations  
+- 💾 Persistent data storage using MongoDB  
+- 💻 Responsive modern user interface  
 
 ---
 
@@ -34,18 +34,81 @@ A full-stack Digital Wellness Recommendation Engine web application that helps u
 
 ### Authentication & Security
 - JWT (JSON Web Token)
-- bcrypt (Password hashing)
+- bcrypt
 
 ---
 
 ## 🏗 Architecture
 
-Frontend (React)
-⬇
-Backend API (Node.js + Express)
-⬇
+```
+Frontend (React.js)
+        │
+        ▼
+Backend API (Node.js + Express.js)
+        │
+        ▼
 Database (MongoDB)
-⬇
-Authentication (JWT + bcrypt)
+        │
+        ▼
+Authentication & Security (JWT + bcrypt)
+```
+
+---
+
+## 📂 Project Structure
+
+```
+Digital_Wellness/
+│
+├── client/          # React frontend
+├── server/          # Node.js backend
+├── test_api.js      # API test file
+└── README.md
+```
+
+---
+
+## ⚙️ Installation & Setup
+
+### 1. Clone Repository
+
+```
+git clone https://github.com/ANBU2006/Digital_Wellness.git
+cd Digital_Wellness
+```
+
+### 2. Backend Setup
+
+```
+cd server
+npm install
+npm start
+```
+
+### 3. Frontend Setup
+
+```
+cd client
+npm install
+npm start
+```
+
+---
+
+## 🔐 Environment Variables
+
+Create `.env` file inside server folder:
+
+```
+PORT=5000
+MONGO_URI=your_mongodb_connection_string
+JWT_SECRET=your_secret_key
+---
+
+## 👨‍💻 Author
+
+**Salai Anbarasan S**
+
+GitHub: https://github.com/ANBU2006
 
 ---
