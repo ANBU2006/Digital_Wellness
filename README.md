@@ -6,13 +6,10 @@ A full-stack **Digital Wellness Recommendation Engine** web application that hel
 
 ## 🚀 Features
 
-- 🔐 User Registration and Login with JWT Authentication  
-- 🛡 JWT-only authentication flow (no password hashing)  
-- 📊 Track daily wellness activities  
-- 📈 Visual analytics using Chart.js graphs  
-- 🧠 Dashboard with wellness score and recommendations  
-- 💾 Persistent data storage using MongoDB  
-- 💻 Responsive modern user interface  
+- 🧠 **Dashboard**: Shows your daily wellness summary, goal status, and personalized recommendations.
+- 📈 **Analytics**: Displays activity trends with charts for screen time, sleep, study, and exercise.
+- 🗂 **History**: Stores and shows previous daily entries so you can review past performance.
+- ⚙ **Goals**: Lets you set personal targets (example: sleep `8` hours, study `4` hours, exercise `30` minutes, max screen time `5` hours).
 
 ---
 
