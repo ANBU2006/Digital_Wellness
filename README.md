@@ -1,6 +1,6 @@
-# 🌿 Digital Wellness Tracker
+# 🌿 Digital Wellness Recommendation Engine
 
-A full-stack Digital Wellness Tracker web application that helps users monitor and improve their daily wellness activities such as screen time, study hours, sleep, and exercise.
+A full-stack Digital Wellness Recommendation Engine web application that helps users monitor and improve their daily wellness activities such as screen time, study hours, sleep, and exercise.
 
 ---
 
