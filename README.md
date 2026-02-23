@@ -7,7 +7,7 @@ A full-stack **Digital Wellness Recommendation Engine** web application that hel
 ## 🚀 Features
 
 - 🔐 User Registration and Login with JWT Authentication  
-- 🛡 Secure password hashing using bcrypt  
+- 🛡 JWT-only authentication flow (no password hashing)  
 - 📊 Track daily wellness activities  
 - 📈 Visual analytics using Chart.js graphs  
 - 🧠 Dashboard with wellness score and recommendations  
@@ -34,7 +34,6 @@ A full-stack **Digital Wellness Recommendation Engine** web application that hel
 
 ### Authentication & Security
 - JWT (JSON Web Token)
-- bcrypt
 
 ---
 
@@ -50,7 +49,7 @@ Backend API (Node.js + Express.js)
 Database (MongoDB)
         │
         ▼
-Authentication & Security (JWT + bcrypt)
+Authentication & Security (JWT only)
 ```
 
 ---
@@ -103,6 +102,7 @@ Create `.env` file inside server folder:
 PORT=5000
 MONGO_URI=your_mongodb_connection_string
 JWT_SECRET=your_secret_key
+```
 ---
 
 ## 👨‍💻 Author

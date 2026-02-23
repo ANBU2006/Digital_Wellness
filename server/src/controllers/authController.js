@@ -1,4 +1,3 @@
-const bcrypt = require("bcryptjs");
 const User = require("../models/User");
 const { signToken } = require("../utils/jwt");
 
@@ -9,8 +8,7 @@ const register = async (req, res, next) => {
     if (existing) {
       return res.status(400).json({ message: "Email already in use" });
     }
-    const hashed = await bcrypt.hash(password, 10);
-    const user = await User.create({ name, email, password: hashed });
+    const user = await User.create({ name, email, password });
     const token = signToken(user);
     res.status(201).json({
       token,
@@ -28,7 +26,7 @@ const login = async (req, res, next) => {
     if (!user) {
       return res.status(401).json({ message: "Invalid credentials" });
     }
-    const match = await bcrypt.compare(password, user.password);
+    const match = password === user.password;
     if (!match) {
       return res.status(401).json({ message: "Invalid credentials" });
     }
