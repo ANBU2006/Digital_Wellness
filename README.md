@@ -82,7 +82,7 @@ cd Digital_Wellness
 ```
 cd server
 npm install
-npm start
+npm run dev
 ```
 
 ### 3. Frontend Setup
@@ -90,7 +90,7 @@ npm start
 ```
 cd client
 npm install
-npm start
+npm ren dev
 ```
 
 ---
